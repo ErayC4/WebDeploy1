@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Post</title>
-    
-    
-    
-    <link rel="stylesheet" href="/css/uploadpage/toolbar.css">
-    
-    <link rel="stylesheet" href="/css/uploadpage/editbar.css">
-    <link rel="stylesheet" href="/css/uploadpage/uppercontainer.css">
-    <link rel="stylesheet" href="/css/uploadpage/compress.css">
-    
-    
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" crossorigin src="/WebDeploy1/assets/padding-f6cd9258.js"></script>
-  <script type="module" crossorigin src="/WebDeploy1/assets/appear-dcae35d0.js"></script>
+    <title>Final Touches</title>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+  <script type="module" crossorigin src="/WebDeploy1/assets/final_touches-863b9ee2.js"></script>
+  <link rel="modulepreload" crossorigin href="/WebDeploy1/assets/padding-f6cd9258.js">
+  <link rel="modulepreload" crossorigin href="/WebDeploy1/assets/appear-dcae35d0.js">
   <link rel="stylesheet" href="/WebDeploy1/assets/padding-05939186.css">
   <link rel="stylesheet" href="/WebDeploy1/assets/appear-d12122e8.css">
-  <link rel="stylesheet" href="/WebDeploy1/assets/createpost-dd1402a2.css">
+  <link rel="stylesheet" href="/WebDeploy1/assets/finaltouches-89c16dc1.css">
+  <link rel="stylesheet" href="/WebDeploy1/assets/compress-a84aee71.css">
   <link rel="stylesheet" href="/WebDeploy1/assets/navbar-d7982d6f.css">
 </head>
 <body>
@@ -28,10 +31,10 @@
     
     
     
+    
+    
 
 
-
-    <!-- Navbar -->
     <div class="navbar">
         <img src="/WebDeploy1/assets/logo2-b682aeb4.png" alt="Logo" class="logo">
 
@@ -43,34 +46,42 @@
         <img src="/WebDeploy1/assets/list-8691bb3e.svg" alt="List Icon" class="list-icon">
     </div>
 
-    <!-- blank -->
-
     <div id="content">
 
-        <p class="create-post-heading">CREATE</p>
+        <div class="your-post-container">
+            <div class="your-post-heading-container">
+                <div class="your-post-heading">
+                    <p>Your post</p>
+                </div>
+        
+                <div class="your-content">
+                    <p>Hier ist der Inhalt, der erst sichtbar ist, nachdem auf 'your-post-content' gedrückt wurde</p>
+                </div>
+                
+                <div class="your-post-heading-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        
 
-        <input type="text" id="title" placeholder="Enter Post-Title..." oninput="limitText(this, 80)">
+        
+        <div class="summarized-input-field-container">
             
-        <script>
-            function limitText(element, maxLength) {
-                if (element.value.length > maxLength) {
-                    element.value = element.value.slice(0, maxLength);
-                }
-            }
-        </script>
+            <div class="summarized-input-field">
 
-        <div class="container-container">
+                    <div class="heading">
+                        <p>SUMMARIZE</p>
+                    </div>
 
-            <div class="container">
-                <div class="input-container" id="input-container">
+                <div class="summarized"> 
                     <div id="editorjs" contenteditable="true"></div>
                 </div>
             </div>
-            
         </div>
-        
-        
-        
+
         <div class="information-menu">
             <div class="information-menu-container">
                 <div class="menu-piece">
@@ -84,7 +95,7 @@
         <div class="explanation">
             <div class="explanation-container-left">
                 <p class="explanation-heading">Wellcome!</p>
-                <p class="explanation-explanation">Here you can write an article. There are some points, that may improve your article:</p>
+                <p class="explanation-explanation">Here you summarize your article. There are some points, that may help:</p>
                 <p class="explanation-points">1. Do not use overcomplicated language</p>
                 <p class="explanation-points">2. Maintain a Clear and Structure</p>
                 <p class="explanation-points">3. Support your claims</p>
@@ -95,26 +106,50 @@
         </div>
         
 
-        <div class="submit-button-container">
-            <a href=" /WebDeploy1/finaltouches.html" class="submit-button">SUBMIT</a>
+
+        <div class="image-field-container">
+
+            <div class="image-input-field">
+
+                <div class="heading">
+                    <p>CHOOSE COVER</p>
+                </div>
+
+                <div class="image-input"> 
+                    <input type="file" name="filepond" multiple />
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="tags-container">
+            <div class="tags-field">
+                <div class="tag-heading">
+                    <p class="tag">TAGS</p>
+                </div>
+                    
+                <input type="text" class="tags-inputfield">
+
+            </div>
+            <p class="tag-info-text">Add up to 5 tags</p>
+
+        </div>
+        <div class="finish-button-container">
+            <a href="/WebDeploy1/posted.html" class="finish-button">FINISH</a>
             <div class="arrow-container">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="arrow" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                 </svg>
             </div>
         </div>
-
     </div>
-
-    
-</div>
-
-<div class="copyright-privacy">
-    <p class="copy-pri">© 2023 1MinuteComputerSciene</p>
-    <p class="copy-pri">Privacy and Cookies</p>
-    <p class="copy-pri">Personal Information</p>
-</div>
-
+    </div>
+           
+    <div class="copyright-privacy">
+        <p class="copy-pri">© 2023 1MinuteComputerSciene</p>
+        <p class="copy-pri">Privacy and Cookies</p>
+        <p class="copy-pri">Personal Information</p>
+    </div>  
 </body>
 </html>
 
