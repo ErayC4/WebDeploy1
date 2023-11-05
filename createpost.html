@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Post</title>
+    
+    
+    
+    <link rel="stylesheet" href="/css/uploadpage/toolbar.css">
+    
+    <link rel="stylesheet" href="/css/uploadpage/editbar.css">
+    <link rel="stylesheet" href="/css/uploadpage/uppercontainer.css">
+    <link rel="stylesheet" href="/css/uploadpage/compress.css">
+    
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" crossorigin src="/WebDeploy1/assets/create_post-ba544d72.js"></script>
+  <link rel="modulepreload" crossorigin href="/WebDeploy1/assets/padding-da92421b.js">
+  <link rel="stylesheet" href="/WebDeploy1/assets/padding-29730a54.css">
+  <link rel="stylesheet" href="/WebDeploy1/assets/createpost-6495d019.css">
+</head>
+<body>
+
+    
+    
+    
+
+
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="/WebDeploy1/assets/logo2-b682aeb4.png" alt="Logo" class="logo">
+
+        <div class="upload-icon-container">
+            <a href="/WebDeploy1/uploadpage.html"><img src="/WebDeploy1/assets/upload-803cc454.svg" alt="List Icon" class="upload-icon"></a>
+        </div>
+        <img src="/WebDeploy1/assets/shuffle-ccd4b6a6.svg" alt="List Icon" class="shuffle-icon">
+        <img src="/WebDeploy1/assets/search-b61e42b5.svg" alt="Search Icon" class="search-icon"> 
+        <img src="/WebDeploy1/assets/list-8691bb3e.svg" alt="List Icon" class="list-icon">
+    </div>
+
+    <!-- blank -->
+
+    <div id="content">
+
+        <p class="create-post-heading">CREATE</p>
+
+        <input type="text" id="title" placeholder="Enter Post-Title..." oninput="limitText(this, 80)">
+            
+        <script>
+            function limitText(element, maxLength) {
+                if (element.value.length > maxLength) {
+                    element.value = element.value.slice(0, maxLength);
+                }
+            }
+        </script>
+
+        <div class="container-container">
+
+            <div class="container">
+                <div class="input-container" id="input-container">
+                    <div id="editorjs" contenteditable="true"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <div class="information-menu">
+            <div class="information-menu-container">
+                <div class="menu-piece">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="question-svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <div class="explanation-container-left">
+                <p class="explanation-heading">Wellcome!</p>
+                <p class="explanation-explanation">Here you can write an article. There are some points, that may improve your article:</p>
+                <p class="explanation-points">1. Do not use overcomplicated language</p>
+                <p class="explanation-points">2. Maintain a Clear and Structure</p>
+                <p class="explanation-points">3. Support your claims</p>
+                <p class="next-steps">Next Steps:</p>
+                <p class="explanation-points">You are going to summarize your article and choose a front cover</p>
+                <p class="next-steps">Happy Writing!</p>
+            </div>
+        </div>
+        
+
+        <div class="submit-button-container">
+            <a href=" /WebDeploy1/finaltouches.html" class="submit-button">SUBMIT</a>
+            <div class="arrow-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="arrow" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    
+</div>
+
+<div class="copyright-privacy">
+    <p class="copy-pri">© 2023 1MinuteComputerSciene</p>
+    <p class="copy-pri">Privacy and Cookies</p>
+    <p class="copy-pri">Personal Information</p>
+</div>
+
+</body>
+</html>
+
